@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
+
+
+h1, h2 {
+  color: black;
+  font-family: 'Noto Serif', 'Open Sans', sans-serif;
+}
+
+header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 140px auto;
+    background-color: #4abbe8;
+  box-shadow: 5px 5px 5px;
+  color: #071061;
+}
+h1 {
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+.profile {
+  border: 1px solid;
+  color: #C0EFF3;
+  padding: 10px;
+  box-shadow: 5px 5px 5px;
+  color: #071061;
+}
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}
+
+h2 {
+  padding: 5px;
+  border-bottom: 2px solid;
+  color: #071061;
+}
+
+nav ul {
+  display: grid;
+margin: 0;
+  justify-items: beginning;
+}
+
+p {
+  padding: 1px;
+  border-top: 1px solid;
+}
+
+footer {
+  background-color:#4abbe8;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 5px;
+  color: #071061;
+}
+footer p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  padding: 0;
+  justify-self: center;
+  padding: 0.5em;
+  color: yellow;
+}
+span {
+  justify-self: end;
+}
