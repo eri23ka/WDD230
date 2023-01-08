@@ -41,33 +41,26 @@ h2 {
   color: #071061;
 }
 
-nav ul {
+ul {
   display: grid;
 margin: 0;
   justify-items: beginning;
 }
 
-p {
-  padding: 1px;
-  border-top: 1px solid;
+h5 {
+  border-top: 2px solid;
+  color: #071061;
 }
 
 footer {
+  display: grid;
+  grid-template-columns: repeat(1fr);
   background-color:#4abbe8;
-  border: 1px solid;
-  padding: 10px;
   box-shadow: 5px 5px 5px;
   color: #071061;
+  justify-self: center;
 }
 footer p {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-self: center;
-  padding: 0;
-  justify-self: center;
-  padding: 0.5em;
   color: yellow;
-}
-span {
-  justify-self: end;
 }
