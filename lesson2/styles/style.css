@@ -80,3 +80,25 @@ footer {
     color: white;
     border-radius: 1em;
 }
+
+
+@media only screen and (min-width: 900px) {
+	main {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr;}
+
+}
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+}	
+@media only screen and (max-width: 600px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+
+	}
+}
