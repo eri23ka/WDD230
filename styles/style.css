@@ -2,9 +2,12 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 h1, h2 {
   color: black;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -15,9 +18,9 @@ header {
   box-shadow: 5px 5px 5px;
   color: #071061;
 }
+
 h1 {
   padding: 1em;
-  font-size: 1.5rem;
 }
 
 img {
@@ -56,15 +59,14 @@ h5 {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0;
-  grid-gap: 1em;
-  background-color: #3e3e3e;
-  align-items: center;
-  color: #ffffff;
+  grid-template-columns: repeat(1fr);
+  background-color:#4abbe8;
+  box-shadow: 5px 5px 5px;
+  color: #071061;
+  justify-self: center;
 }
 footer p {
-  justify-self: start;
-  padding: 0;
-  color: white;
+  justify-self: center;
+  color: black;
 }
+
