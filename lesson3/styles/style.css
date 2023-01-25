@@ -152,6 +152,16 @@ nav a:hover{
 h3 {
   text-align: center;
 }
+
+#logo {
+  align-self: center;
+}
+
+.palette {
+  float: left;
+}
+
+
 @media screen and (max-width: 550px) {
   .home-grid {
     display: block;
