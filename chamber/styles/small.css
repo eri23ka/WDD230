@@ -1,0 +1,91 @@
+@media screen and (max-width: 35em) {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        margin: 0;
+    }
+    #header-area{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 1em;
+        place-items: center;
+    }
+    
+    #header-title {
+        overflow: break-word;
+    }
+
+    #logo {
+        grid-column: 1 auto;
+        grid-row: 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    #logo img {
+        max-width: 90px;
+        height: auto;
+    }
+    #menu {
+        grid-column: 3 auto;
+        grid-row: 1 auto;
+        padding: 0.5em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1em;
+        justify-content: space-evenly;
+        margin: 0em;
+        padding: 0em;
+    }
+    #social {
+        grid-column: 2 auto;
+        grid-row: 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5em;
+        align-items: center;
+    }
+    #social img {
+        max-width: 22px;
+        max-height: 22px;
+        height: auto;
+    }
+
+    main {
+        display: flex;
+        gap: 1em;
+    }
+    .spotlight {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em 1em;
+    }
+    #join {
+        display: none;
+    }
+    #top-footer {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0.5em;
+        text-align: center;
+    }
+    #bottom-logo {
+        max-width: 60px;
+        height: auto;
+        grid-column: 1 auto;
+        grid-row: 1/4;
+    }
+    #bottom-footer, p {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+}

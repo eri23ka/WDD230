@@ -81,23 +81,18 @@ footer {
   color: #ffffff;
   padding: 0.5em;
 }
-footer p {
-  justify-self: start;
-  padding: 0;
-}
 
 footer p {
+  padding: 0;
   justify-self: center;
   color: #b1d6a3;
 }
 
 .social {
-  
   justify-self: end;
   padding: 0;
   margin: 0;
   align-self: center;
-  
 }
 
 nav a:hover{
