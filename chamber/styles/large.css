@@ -1,4 +1,4 @@
-@media only screen and (min-width: 150px) {
+@media only screen and (min-width: 65em) {
     #logo img {
         max-width: 150px;
         height: auto;
