@@ -12,22 +12,15 @@
 
 </head>
 <body>
-    <header>
-        <div onload="animateBanner()">
-            <img alt="🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. , 🎊Tuesday🌎"
-            name="headerBanner" src="images/frame.gif">
-        </div>
-        <div>
-            <div id="header-area">
-                <div id="logo"> 
-                    <img src="images/treelogo1.png" alt="Chamber Commerce logo">
-                </div>
-                <section id="header-title">
-                    <h1>Chamber of Commerce</h1>
-                </section>
-            </div>
-            <nav id="menu">
-                <ul>
+    <div onload="animateBanner()"><img alt="🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. , 🎊Tuesday🌎"
+            name="headerBanner" src="images/frame.gif"></div>
+    <div id="content">
+        <header>
+            <div class="header-area"><img id="logo" src="images/treelogo1.png" alt="Chamber Commerce logo"></div>
+            <p id="header-title">Chamber of Commerce</p>
+            <nav>
+            <!-- <button id="hamburger"></button> -->
+                <ul id="menu">
                     <li><a href="#" alt="Discover">Discover</a></li>
                     <li><a href="#" alt="Join">Join</a></li>
                     <li><a href="#" alt="Contact">Contact</a></li>
@@ -38,8 +31,8 @@
                 <a href="https://linkedin.com" target="_blank"><img src="images/linkedln.png" alt="Linkedln Icon"></a>
             </div>
             <div id="currentYear"></div>
-        </div>
-    </header>
+        </header>
+   
     <main>
         <section id="hero">
             <h2>Hero with site name and call to action</h2>
@@ -85,6 +78,7 @@
             <div id="lastModified"></div>
             <script src="scripts/script.js"></script>
         </div>
-      </footer>
+        </footer>
+    </div>  
 </body>
 </html>
