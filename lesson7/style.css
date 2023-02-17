@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+picture img[data-src] {
+    filter:blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 2s;
+}
