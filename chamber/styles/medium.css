@@ -66,11 +66,11 @@
         flex-wrap: wrap;
     }
 
-    body img {
+   /* body img {
         border: 0;
         height: 3em;
         background-color: #b1d6a3;
-    }   
+    }  */
 
     #logo {
         display: flex;

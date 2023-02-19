@@ -30,22 +30,3 @@ updateDate();
 function toggleMenu() {
     document.getElementsByClassName('menu')[0].classList.toggle('responsive')
 } */
-
-/*-----Banner-------- */
-var banner1 = new Image;
-var banner2 = new Text;
-banner1.src = "frame.gif";
-
-var frame = new Array(banner1);
-var delay = new Array(2500, 500, 2500);
-var numframes = frame.length;
-var curframe = 0;
-
-function animateBanner(){
-		curframe++;
-		if(curframe == numframes) curframe = 0;
-		document.headerBanner.src = frame[curframe].src;
-		/*setTimeout("animateBanner()", 1200);*/
-		setTimeout("animateBanner()", delay[curframe]);
-
-}

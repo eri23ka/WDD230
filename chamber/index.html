@@ -12,31 +12,36 @@
 
 </head>
 <body>
-    <div onload="animateBanner()"><img alt="🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. , 🎊Tuesday🌎"
-            name="headerBanner" src="images/frame.gif"></div>
+    <div>
+        <p>"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. , 🎊Tuesday🌎"</p>
+    </div>        
     <div id="content">
         <header>
-            <div class="header-area"><img id="logo" src="images/treelogo1.png" alt="Chamber Commerce logo"></div>
+            <div><img id="logo" src="images/treelogo1.png" alt="Chamber Commerce logo"></div>
             <p id="header-title">Chamber of Commerce</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.jpg" alt="Facebook Icon"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.jpg" alt="Linkedln Icon"></a>
+            </div>
+            <div id="currentYear"></div>
             <nav>
-            <!-- <button id="hamburger"></button> -->
                 <ul id="menu">
                     <li><a href="#" alt="Discover">Discover</a></li>
                     <li><a href="#" alt="Join">Join</a></li>
                     <li><a href="#" alt="Contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="images/linkedln.png" alt="Linkedln Icon"></a>
-            </div>
-            <div id="currentYear"></div>
         </header>
    
     <main>
         <section id="hero">
-            <h2>Hero with site name and call to action</h2>
+            <picture>
+                <source srcset="images/city 800x450.jpg" media="(mind-width:641px) and (max-width:1000px)" alt="medium">
+                <source srcset="images/city 1008x567.jpg" media="(mid-width: 1008px)"at="large">
+                <img src="images/city.jpg" alt="hero-image" class="hero-image">
+            </picture>
         </section>
+
         <section id="event">
             <h2>Event</h2>
         </section>
