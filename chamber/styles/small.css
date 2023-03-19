@@ -92,7 +92,7 @@ body {
 main {
   background-color: #FFFFFF;
   display: grid;
-  grid-template-columns: 1fr auto;
+  /*grid-template-columns: 1fr auto; */
   grid-template-rows: repeat(5, 1fr);
 
 }
