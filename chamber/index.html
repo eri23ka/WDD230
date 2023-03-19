@@ -23,53 +23,104 @@
                 <a href="https://facebook.com" target="_blank"><img src="images/facebook.jpg" alt="Facebook Icon"></a>
                 <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.jpg" alt="Linkedln Icon"></a>
             </div>
+
             <div id="currentYear"></div>
             <nav>
                 <ul id="menu">
+                    <li><a href="index.html" alt="homepage">Home</a></li>
                     <li><a href="discover.html" alt="Discover">Discover</a></li>
-                    <li><a href="#" alt="Join">Join</a></li>
-                    <li><a href="#" alt="Contact">Contact</a></li>
+                    <li><a href="directory.html" alt="Directory">Directory</a></li>
+                    <li><a href="join.html" alt="Join">Join</a></li>
+                    <li><a href="contact.html" alt="Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
    
-    <main>
+    <main class="home-page">
         <section id="hero">
             <picture>
-                <source srcset="images/city 800x450.jpg" media="(mind-width:641px) and (max-width:1000px)" alt="medium">
-                <source srcset="images/city 1008x567.jpg" media="(mid-width: 1008px)"at="large">
+                <source srcset="images/vineyard.jpg" media="(mind-width:641px) and (max-width:1000px)" alt="medium">
+                <source srcset="images/cuture.jpg" media="(mid-width: 1008px)"at="large">
                 <img src="images/city.jpg" alt="hero-image" class="hero-image">
+            </picture>
+            <section id="join">
+                <button onclick="window.location.href='join.html';" class="btn">Join</button>
+            </section>
+            <picture>
+                <img src="images/san francisco.jpg" alt="san francisco">
             </picture>
         </section>
 
         <section id="event">
-            <h2>Event</h2>
-        </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <img src="images/weather icon.png" alt="weather icon">
-            <p class="temparature">30&deg;</p>
-            <div id="windchill">
-                <p>Wind Chill: <span class=""></span></p>
+            <h2>Health & Fitness</h2>
+            <div>            
+                <p>A free to attend event with athletic competitions, 
+                exercise classes, workshops, information, retail vendors, food, and more, on April 1 & 2, 2023, 
+                held at the Sunmaid Plant, 13525 S. Bethel Avenue Kingsburg, Ca 93631.
+                Please see our <a href="#">EXPO page</a> for more details.</p>
             </div>
         </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather icon.png" alt="weather icon" id="weather-icon">
+            <span>
+                <span id="description"></span>
+            </span>
+            <div id="wind-chill">
+                <span class="temp">
+                    <span>Temperature: <span id="temperature">°</span></span>
+                </span>
+                <span class="wind">
+                    <span>Wind Speed: <span id="windspeed"> Km🍃</span></span>
+                </span>
+                <span class="chill">
+                    <span>Wind Chill: <span id="windchill">🌬️</span></span>
+                </span> 
+            </div>
+            <div>
+                <a href="https://openweathermap.org/city/5394329">Openweather</a>
+            </div>
+        </section>
+
         <section id="news">
             <h2>News Release</h2>
+            <div>
+                <p><bold>Annual Dinner and Awards</bold></p>
+                <p>We will welcoming all new members, 
+                    awards will be given entrepreneurs, small and big business that
+                    achieved their goals.<br>
+                    Thursday April 15, 2023 at 6 p.m. 
+                </p>
+                <img src="images/mural.jpg" alt="mural">
+            </div>
         </section>
+
         <div class="spotlight">
-            <section>
-                <h3>Spotlight 1</h3>
+            <section class="spot1">
+                <h3>Farmers Market</h3>
+                <p>The Farmers Market will be held in Lincoln Park 
+                    on Friday, between 5:00pm-8:00pm.
+                    The Farmes Market & concert will run for six weeks.
+                </p>
             </section>
-            <section>
-                <h3>Spotlight 2</h3>
+            <section class="spot2">
+                <h3>34th Annual Blossom Trail</h3>
+                <p>
+                    <em>Celebrating 135 years of Community 1888-2023</em>
+                    Live music, kids activities, legomaster competition, 
+                    car show, food trucks, crafts, & much more. 
+                    9 a.m-6 p.m. Downtown Selma 
+                </p>
             </section>
-            <section>
-                <h3>Spotlight 3</h3>
+            <section class="spot3">
+                <h3>Rubbion Cutting</h3>
+                <p>Join us for a ribbon cutting, 
+                   Monday April 3, 2023, ribbon cutting @ 5 p.m.
+                   2446 McCall Avenue, Suite 104 Selma Ca 93662
+                </p>
             </section>
         </div>
-        <section id="join">
-            <h2>Join</h2>
-        </section>
     </main>
     <footer>
         <div id="top-footer"> 
@@ -79,16 +130,17 @@
             <hr>
             <p>info@chamberofcommerce.org</p>
             <p>+1(559)800-2525</p>
-            <p><a href="https://goo.gl/maps/VuqsSe6qWw8SYBd17" alt="location">Location Map</a></p>
+            <p><a href="https://goo.gl/maps/VuqsSe6qWw8SYBd17" alt="location">Location Map📍</a></p>
             <p></p>
         </div>
         <hr>
         <div id="bottom-footer">
             <p> &copy;2023 Chamber Of Commerce | Erika Ramirez | WDD230 Project | </p>
             <div id="lastModified"></div>
-            <script src="scripts/script.js"></script>
         </div>
         </footer>
-    </div>  
+        <script src="scripts/script.js"></script> 
+    </div>
+    <script src="scripts/windchill.js"></script>  
 </body>
 </html>

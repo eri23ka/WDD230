@@ -119,4 +119,9 @@
         flex-flow: column nowrap;
         align-items: center;
     } 
+
+    /* ----DIRECTORY ---*/
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }

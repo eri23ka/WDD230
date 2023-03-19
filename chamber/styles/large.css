@@ -52,4 +52,26 @@
         gap: 0.5em;
         justify-content: center;
     }
+
+/* ------DISCOVER----*/
+    main.discover-container {
+        display: grid;
+        grid-template-rows: auto;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        grid-gap: 2rem;
+        background-color: whitesmoke;
+    }
+    .discover {
+        display: grid;
+    }
+    .description {
+        display: flex;
+        align-items: center;
+    }
+/* -------DIRECTORY----*/
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }   
 } 
