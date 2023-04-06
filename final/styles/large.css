@@ -32,9 +32,9 @@
         margin-top: 2rem;
       }
     
-      .weather-grid{
+      .weather{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 0;
       }

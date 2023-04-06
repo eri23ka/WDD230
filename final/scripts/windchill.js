@@ -1,8 +1,11 @@
 /*--- Wheather ---*/
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Santacruz&appid=5ca3856d54d3b8e8a1608e763137dcaa&units=imperial'
+const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Santa+Cruz&appid=5ca3856d54d3b8e8a1608e763137dcaa'
 
 function convertToCelsius(fahrenheit) {
     return (fahrenheit - 32) / 1.8;
+  }
+function convertMPHtoKPH(mph) {
+    return mph * 1.60934;
   }
   
   function extractWeatherInfo(weatherData){
@@ -11,7 +14,7 @@ function convertToCelsius(fahrenheit) {
     dates.push(weatherData.list[0].dt_txt.split(" ")[0]);
     weatherList.push(weatherData.list[0]);
     weatherData.list.forEach(data => {
-      if(!dates.includes(data.dt_txt.split(" ")[0]) && (weatherList.length < 3)){
+      if(!dates.includes(data.dt_txt.split(" ")[0]) && (weatherList.length < 4)){
         dates.push(data.dt_txt.split(" ")[0]);
         weatherList.push(data);
       }
@@ -55,14 +58,14 @@ function convertToCelsius(fahrenheit) {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        // console.log(data); // this is for testing the call
+       /* console.log(data); testing still */
         const cleanData = extractWeatherInfo(data);
         setWeatherValues(cleanData);
       } else {
         throw Error(await response.text());
       }
     } catch (error) {
-      console.log(error);
+      /*console.log(error); */
     }
   }
   
