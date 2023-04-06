@@ -1,5 +1,6 @@
 /*--- Wheather ---*/
-const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Santa+Cruz&appid=5ca3856d54d3b8e8a1608e763137dcaa'
+API_key = `5ca3856d54d3b8e8a1608e763137dcaa`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?q=santacruz&appid=${API_key}&units=imperial`;
 
 function convertToCelsius(fahrenheit) {
     return (fahrenheit - 32) / 1.8;
@@ -14,7 +15,7 @@ function convertMPHtoKPH(mph) {
     dates.push(weatherData.list[0].dt_txt.split(" ")[0]);
     weatherList.push(weatherData.list[0]);
     weatherData.list.forEach(data => {
-      if(!dates.includes(data.dt_txt.split(" ")[0]) && (weatherList.length < 4)){
+      if(!dates.includes(data.dt_txt.split(" ")[0]) && (weatherList.length < 3)){
         dates.push(data.dt_txt.split(" ")[0]);
         weatherList.push(data);
       }
@@ -40,8 +41,8 @@ function convertMPHtoKPH(mph) {
       weatherIcon.setAttribute("alt", desc);
       captionDesc.textContent = capitalized;
   
-      const tempCelsius = convertToCelsius(weatherData.main.temp).toFixed(0);
-      temp.innerHTML = "Temp : " + tempCelsius;
+      const tempFahrenheit = convertToCelsius(weatherData.main.temp).toFixed(0);
+      temp.innerHTML = "Temp : " + tempFahrenheit;
   
       humidity.innerHTML = "Humidity : " + weatherData.main.humidity + "%";
       if(index==2){
@@ -65,8 +66,8 @@ function convertMPHtoKPH(mph) {
         throw Error(await response.text());
       }
     } catch (error) {
-      /*console.log(error); */
+      /*console.log(error);*/
     }
   }
   
-  apiFetch();
+apiFetch();

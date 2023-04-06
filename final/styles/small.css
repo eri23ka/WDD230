@@ -23,6 +23,8 @@ body {
   footer{
     background-color: #d2e0ad;
     color: #363636;
+    padding: 1rem;
+    margin: 1rem;
   }
 
   .message{
@@ -33,6 +35,7 @@ body {
     background-color: #f7f7f7;
     border-radius: 1rem;
     padding: 1rem;
+    border: 0.2rem solid #d2e0ad;
   }
   
   .card>h2{
@@ -40,7 +43,7 @@ body {
     font-size: 1rem;
     background-color: #d2e0ad;
     border-radius: 2rem;
-    padding: 0.5rem 0.875rem;
+    padding: 0.5rem 1rem;
   }
   
   .card>h3{
@@ -63,7 +66,7 @@ body {
   
   .btn:hover{
     background-color: #7c34c7;
-    color: #b2d563;
+    color: #575757;
   }
   
   .hidden{
@@ -147,19 +150,13 @@ body {
     gap: 1rem;
     margin-top: 2rem;
   }
-  
-  .info-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
+
   .weather{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: #575757;
   }
   
   .about-grid{

@@ -41,9 +41,10 @@
         </header>
    
     <main class="home-page">
-        <section id="summary-img">
-            <picture>
-                <source srcset="images/variety.jpg" media="(mid-width: 1008px)"at="large">
+        <section>
+            <picture id="summary-img">
+                <source srcset="images/variety.jpg" media="(mid-width: 65em)"at="large">
+                <source srcset="images/fresh.webp" media="(mid-width: 35em)" at="medium">
                 <img src="images/mixbowl.jpg" alt="mixbowl">
             </picture>
         </section>
@@ -76,7 +77,17 @@
             <div class="weather text-center">
                 <h3>Weather Today</h2>
                 <p>
-                    <img src="" alt="weather icon" id="weather-icon">
+                    <img src="" alt="weather icon" id="weather-icon-0">
+                    <p id="description-0"></p>
+                </p>
+                <span class="bold"><span id="temperature-0"></span><sup>o</sup>F</span>
+                <p id="humidity-0"></p>
+            </div>
+
+            <div class="weather text-center">
+                <h3>Weather Tomorrow</h3>
+                <p>
+                    <img src="" alt="weather icon" id="weather-icon-1">
                     <p id="description-1"></p>
                 </p>
                 <span class="bold"><span id="temperature-1"></span><sup>o</sup>F</span>
@@ -84,30 +95,20 @@
             </div>
 
             <div class="weather text-center">
-                <h3>Weather Tomorrow</h3>
+                <h3 id="forecast-date"></h3>
                 <p>
-                    <img src="" alt="weather icon" id="weather-icon">
-                    <p id="description-2"></p>
+                  <img src="" alt="weather icon" id="weather-icon-2">
+                  <p id="description-2"></p>
                 </p>
                 <span class="bold"><span id="temperature-2"></span><sup>o</sup>F</span>
                 <p id="humidity-2"></p>
-            </div>
-
-            <div class="weather text-center">
-                <h3 id="forecast-date"></h3>
-                <p>
-                  <img src="" alt="weather icon" id="weather-icon">
-                  <p id="description-3"></p>
-                </p>
-                <span class="bold"><span id="temperature-3"></span><sup>o</sup>F</span>
-                <p id="humidity-3"></p>
               </div>
         </div>
     </main>
     <footer>
             <p> &copy; <span id="year"></span> Bountiful Foods | Santa Cruz, CA | Last Visited: <span id="update"></span></p>
-            <script src="scripts/script.js"></script> 
-            <script src=".scripts/windchill.js"></script>
+            <script src="scripts/script.js"></script>   
     </footer>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
