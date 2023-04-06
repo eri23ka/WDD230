@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bountiful Foods</title>
+
+  <link rel="stylesheet" href="styles/small.css">  
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="" rel="stylesheet">
+</head>
+
+<body>  
+        <header>
+            <nav id="header-nav">
+                <div>
+                    <img src="./images/vegie smoothie.png" alt="Bountiful foods Logo">
+                </div>
+
+                <div id="toggle-box">
+                    <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+                    <pan id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</pan>
+                </div>
+
+                <div class="headernav-link">
+                    <span><a href="index.html">Home</a></span>
+                    <span><a href="fresh.html">Fresh</a></span>
+                    <span><a href="order.html"></a>Order</span>
+                    <span><a href="contact.html">About Us</a></span>
+                </div>
+            </nav>
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.gif" alt="facebook Icon"></a>
+                <a href="https://snapchat.com" target="_blank"><img src="images/snapchat.png" alt="snapchat Icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram Icon"></a>
+            </div>
+        </header>
+   
+    <main>
+        <div class="about-grid">
+            <div class="card">
+              <form id="contactForm">
+                <h1>Contact US</h1>
+                <div class="divider"></div>
+                <label for="firstName" class="mt">
+                  First Name*
+                </label>
+                <input id="firstName" type="text" name="firstName" required>
+                <label for="lastName">
+                  Last Name*
+                </label>
+                <input id="lastName" type="text" name="lastName" required>
+                <label for="email">
+                  Email*
+                </label>
+                <input id="email" type="email" name="email" required>
+                <label>
+                  Wellness for all! Become Ambassador of Healthy Living!
+                </label>
+                <textarea name="businessDescription"></textarea>
+                <input type="submit" class="btn">
+              </form>
+            </div>
+            <div class="contact-content">
+              <div id="contact-box">
+                <div class="divider"></div>
+                <p class="display-text-1">Contact Us</p>
+                <div id="contact-info">
+                  <p class="display-text-2">Bountiful Foods</p>
+                  <p>3945 Healthy St.</p>
+                  <p> Santa Cruz, California</p>
+                </div>
+                <p>+1 (559)354-9820</p>
+              </div>
+            </div>
+        </div>
+      </main>
+    </main>
+    <footer>
+            <p> &copy; <span id="year"></span>Bountiful Foods | Santa Cruz, CA | Last Visited: <span id="update"></span></p>
+    </footer>
+    <script src=".scripts/script.js"></script> 
+    <script src=".scripts/windchill.js"></script>
+</body>
+</html>

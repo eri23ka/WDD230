@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: 'Alkatra', cursive, 'Open Sans', sans-serif;
+    color: #363636;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main{
+    margin-bottom: 4rem;
+    padding: 1rem;
+  }
+  
+  footer{
+    background-color: #d2e0ad;
+    color: #363636;
+  }
+
+  .message{
+    margin: 2rem;
+  }
+  
+  .card {
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .card>h2{
+    text-align: center;
+    font-size: 1rem;
+    background-color: #d2e0ad;
+    border-radius: 2rem;
+    padding: 0.5rem 0.875rem;
+  }
+  
+  .card>h3{
+    border-bottom: 2px solid #7c3a7c;
+    padding-bottom: 0.5rem;
+  }
+  
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c34c7;
+    color: #b2d563;
+    font-size: 16pt;
+    border: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background-color: #7c34c7;
+    color: #b2d563;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  /* navigation */
+  #header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2d563;
+    padding: 1.25rem 0.75rem;
+  }
+  img {
+    width: auto;
+  }
+  
+  .nav-link > a {
+    text-decoration: none;
+    color: #575757;
+    font-size: 1.2rem;
+    margin: 0rem 0.7rem;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #nav-links{
+    display: none;
+  }
+  
+  #social{
+    display: none;
+  }
+  
+  #dropdown-menu>#social{
+    display: flex;
+  }
+  
+  #social>a{
+    height: 2rem;
+    width: 2rem;
+    background-color: #b2d563;
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+    border-radius: 4rem;
+  }
+  
+  #socials>a:hover{
+    background-color: #7c34c7;
+  }
+  
+  #toggler{
+    background-color: #7c34c7; 
+    padding: .25rem;
+    border-radius: .25rem;
+  }
+  
+  #dropdown-menu{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+  #dropdown-links>.nav-link{
+    margin-bottom: 1rem;
+  }
+  
+  /* grids */
+  .home-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .info-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .weather-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* order section */
+  #orders>p{
+    display: flex;
+    align-items: center;
+  }
+  
+  #orders>p>img{
+    margin-right: 0.5rem;
+    background-color: #b2e0b2;
+    padding: 0.2rem;
+  }
+  
+  /* fresh page */
+  #freshForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  
+  label{
+    font-weight: bold;
+  }
+  
+  input, select, textarea{
+    padding: 0.75rem 1rem;
+    border: 2px solid #7c34c7;
+    border-radius: 2rem;
+    margin: 0.75rem 0;
+    text-align: center;
+  }
+  
+  select{
+    padding: 0.75rem;
+  }
+  
+  #orderDetails{
+    margin-top: 5rem;
+  }
+  
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .details>p{
+    background-color: #d2e0ad;
+    padding: 0.125rem 1rem;
+  }
+  
+  /* about us */
+  #contactForm{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .contact-content {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+  
+  .display-text-1 {
+    font-size: 2rem;
+    color: #f7f7f7;
+  }
+  
+  .display-text-2 {
+    font-weight: bold;
+  }
+  
+  #contact-box{
+    padding: 3rem;
+    background-color: #d2e0ad;
+    margin-bottom: 4rem;
+  }
+  
+  #contact-info {
+    margin-bottom: 2rem;
+  }
+  
+  .divider{
+    border: 1px solid #7c34c7;
+    width: 90%;
+  }
+  

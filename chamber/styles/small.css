@@ -64,6 +64,16 @@ nav a:hover {
 #currentYear {
   padding: 0.5em;
 }
+.btn {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+  cursor:pointer;
+}
 #menu {
   display: flex;
   flex-flow: row nowrap;
@@ -105,10 +115,17 @@ section {
     position: relative;
     padding: 0.5rem;
 }
+#hero {
+  grid-area: hero;
+  background-image: url(../images/city.jpg);
+  background-size: cover;
+}
 #event {
+  grid-area: event;
   background-color: whitesmoke; 
 }
 #weather {
+  grid-area: weather;
   background-color: whitesmoke;
 }
 #news {

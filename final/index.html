@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bountiful Foods</title>
+
+  <link rel="stylesheet" href="styles/small.css">  
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="" rel="stylesheet">
+</head>
+
+<body>  
+        <header>
+            <nav id="header-nav">
+                <div>
+                    <img src="./images/vegie smoothie.png" alt="Bountiful foods Logo">
+                </div>
+
+                <div id="toggle-box">
+                    <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+                    <pan id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</pan>
+                </div>
+
+                <div class="headernav-link">
+                    <span><a href="index.html">Home</a></span>
+                    <span><a href="fresh.html">Fresh</a></span>
+                    <span><a href="order.html"></a>Order</span>
+                    <span><a href="contact.html">About Us</a></span>
+                </div>
+            </nav>
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.gif" alt="facebook Icon"></a>
+                <a href="https://snapchat.com" target="_blank"><img src="images/snapchat.png" alt="snapchat Icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram Icon"></a>
+            </div>
+        </header>
+   
+    <main class="home-page">
+        <section id="summary-img">
+            <picture>
+                <source srcset="images/variety.jpg" media="(mid-width: 1008px)"at="large">
+                <img src="images/mixbowl.jpg" alt="mixbowl">
+            </picture>
+        </section>
+
+        <section id="summary">
+            <h2>Wellness</h2>
+            <div>            
+                <p>With the hustle and bustle of daily life, it can be challenging 
+                to manage your daily nutrition.Make fueling your body with
+                fresh, raw, immunity-boosting juices, superfruit bowls and functional smoothies
+                quick and convenient with Bountiful Foods!
+                </p>
+            </div>
+        </section>
+        <section Id="contact">
+            <h2>Lifestyle Contact Us</h2>
+            <p>
+                From easy-to-add boosts, to mindfully-crafted juices and smoothies, we make it easy for on-the-go individuals,
+                 and treat-seekers alike to get their daily dose of wellness without breaking the bank.
+            </p>
+            <button onclick="window.location.href='contact.html';" class="btn">About Us</button>
+        </section>
+
+        <div id="orders" class="Total-drinks">
+            <h3>Your Order</h3>
+        </div>
+
+        <div id="weather">
+            <div class="weather text-center">
+                <h3>Weather Today</h2>
+                <p>
+                    <img src="" alt="weather icon" id="weather-icon">
+                    <p id="description-1"></p>
+                </p>
+                <span class="bold"><span id="temperature-1"></span><sup>o</sup>C</span>
+                <p id="humidity-1"></p>
+            </div>
+
+            <div class="weather text-center">
+                <h3>Weather Tomorrow</h3>
+                <p>
+                    <img src="" alt="weather icon" id="weather-icon">
+                    <p id="description-2"></p>
+                </p>
+                <span class="bold"><span id="temperature-1"></span><sup>o</sup>C</span>
+                <p id="humidity-2"></p>
+            </div>
+
+            <div class="weather text-center">
+                <h3 id="forecast-date"></h3>
+                <p>
+                  <img src="" alt="weather icon" id="weather-icon">
+                  <p id="description-2"></p>
+                </p>
+                <span class="bold"><span id="temperature-3"></span><sup>o</sup>C</span>
+                <p id="humidity-3"></p>
+              </div>
+        </div>
+    </main>
+    <footer>
+            <p> &copy;<span id="year"></span>Bountiful Foods | Santa Cruz, CA | Last Visited: <span id="update"></span></p>
+            <script src="scripts/script.js"></script> 
+    </footer>
+    
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

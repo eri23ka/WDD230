@@ -1,0 +1,53 @@
+@media only screen and (min-width: 65em) {
+    body {
+        margin: 0;
+        margin: auto;
+      }
+    
+      /* navigation */
+      #toggler{
+        display: none;
+      }
+    
+      #nav-links{
+        display: block;
+      }
+    
+      #socials{
+        display: flex;
+      }
+    
+      /* grids */
+      .home-grid{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .info-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .weather-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-top: 0;
+      }
+    
+      .about-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+      }
+    
+      /* about us */
+    #contactForm{
+      display: flex;
+      flex-direction: column;
+    }
+    }

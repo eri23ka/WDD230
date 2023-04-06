@@ -1,0 +1,40 @@
+@media only screen and (min-width: 35em) {
+    #toggler{
+        display: none;
+      }
+    
+      #nav-links{
+        display: block;
+      }
+    
+      #socials{
+        display: flex;
+      }
+    
+      .home-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .info-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .weather-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .about-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+    }
